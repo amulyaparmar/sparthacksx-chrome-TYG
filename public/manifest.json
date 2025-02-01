@@ -6,5 +6,18 @@
     "action": {
       "default_popup": "index.html"
     },
-    "permissions": []
+    "permissions": [],
+    "web_accessible_resources": [
+    {
+      "resources": [ "icons/*.png"],
+      "matches": []
+    }
+  ],
+    "content_scripts": [
+      {
+        "js": ["src/content.tsx"],
+        "matches": ["https://*/*", "http://*/*"],
+        "run_at": "document_idle"
+      }
+    ]
   }
