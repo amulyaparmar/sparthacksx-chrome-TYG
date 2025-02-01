@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { crx } from '@crxjs/vite-plugin'
 import manifest from './public/manifest.json'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
@@ -16,6 +17,7 @@ export default defineConfig({
       ],
     }),    
     crx({ manifest }),
+    tailwindcss()
   ],
   build: {
     outDir: 'build',

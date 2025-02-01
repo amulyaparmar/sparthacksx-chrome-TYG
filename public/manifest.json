@@ -17,7 +17,7 @@
       {
         "js": ["src/content.tsx"],
         "matches": ["https://*/*", "http://*/*"],
-        "run_at": "document_idle"
+        "run_at": "document_end"
       }
     ]
   }

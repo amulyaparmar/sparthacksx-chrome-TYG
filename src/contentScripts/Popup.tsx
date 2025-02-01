@@ -5,16 +5,17 @@ function Popup() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
-          TEST
-        </a>
+      <div className='p-10'>
+        <h1 className='text-red-500'>Content Script Popup</h1>
+        <div className='flex gap-2'>
+            <p className="read-the-docs">
+                Dummy Content Text. 
+            </p>
+            <a href="https://vitejs.dev" target="_blank">
+                Test Link
+            </a>
+        </div>
       </div>
-      <h1>Content Script Popup</h1>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more.
-      </p>
     </>
   );
 }
