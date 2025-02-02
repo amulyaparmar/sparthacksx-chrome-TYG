@@ -7,9 +7,9 @@ function NotificationPopup(props: { title:string, description:string}) {
   };
 
   return (
-    <div id="crx-notification" className="rounded-2xl border max-w-sm border-blue-100 bg-white p-4 shadow-lg sm:p-6 lg:p-8" role="alert">
+    <div id="crx-notification" className="rounded-2xl border max-w-sm border-blue-100 !bg-white p-4 shadow-lg sm:p-6 lg:p-8" role="alert">
         <div className="flex items-center gap-4">
-            <span className="shrink-0 rounded-full bg-blue-400 p-2 text-white">
+            <span className="shrink-0 rounded-full !bg-blue-400 p-2 text-white">
             <svg
                 className="size-4"
                 fill="currentColor"
@@ -24,23 +24,23 @@ function NotificationPopup(props: { title:string, description:string}) {
             </svg>
             </span>
 
-            <p className="font-medium text-gray-800 sm:text-lg">{props.title}</p>
+            <p className="font-medium !text-gray-800 sm:text-lg">{props.title}</p>
         </div>
 
-        <p className="mt-4 text-gray-500">
+        <p className="mt-4 !text-gray-500">
             {props.description}
         </p>
 
-        <div className="mt-6 sm:flex sm:gap-4">
+        <div className="mt-6 items-center sm:flex sm:gap-4">
             <a
-            className="inline-block w-full rounded-lg !bg-blue-500 px-5 py-3 text-center text-sm font-semibold !text-white sm:w-auto"
+            className="inline-block h-full w-full rounded-lg !bg-blue-500 px-5 py-3 text-center text-sm font-semibold !text-white sm:w-auto"
             href="#"
             >
             Take a Look
             </a>
 
             <button
-            className="mt-2 inline-block w-full rounded-lg !bg-gray-50 px-5 py-3 text-center text-sm font-semibold !text-gray-500 sm:mt-0 sm:w-auto"
+            className="mt-2 inline-block h-full w-full rounded-lg !bg-gray-50 px-5 py-3 text-center text-sm font-semibold !text-gray-500 sm:mt-0 sm:w-auto"
             onClick={closePopup}
             >
             Mark as Read
