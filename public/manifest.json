@@ -15,7 +15,7 @@
   ],
     "content_scripts": [
       {
-        "js": ["src/content.tsx"],
+        "js": ["src/contentPopup.tsx"],
         "matches": ["https://*/*", "http://*/*"],
         "run_at": "document_end"
       }
